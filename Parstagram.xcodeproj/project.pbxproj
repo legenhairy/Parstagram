@@ -18,6 +18,7 @@
 		E4D926BE222DE03200019F25 /* ParstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D926BD222DE03200019F25 /* ParstagramUITests.swift */; };
 		E4D926CC222E033C00019F25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D926CB222E033C00019F25 /* LoginViewController.swift */; };
 		E4D926CE222E037200019F25 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D926CD222E037200019F25 /* FeedViewController.swift */; };
+		E4D926D0222E29C400019F25 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D926CF222E29C400019F25 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		E4D926BF222DE03200019F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4D926CB222E033C00019F25 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E4D926CD222E037200019F25 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E4D926CF222E29C400019F25 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				E4D926A9222DE03100019F25 /* Info.plist */,
 				E4D926CB222E033C00019F25 /* LoginViewController.swift */,
 				E4D926CD222E037200019F25 /* FeedViewController.swift */,
+				E4D926CF222E29C400019F25 /* CameraViewController.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D926CC222E033C00019F25 /* LoginViewController.swift in Sources */,
+				E4D926D0222E29C400019F25 /* CameraViewController.swift in Sources */,
 				E4D926CE222E037200019F25 /* FeedViewController.swift in Sources */,
 				E4D9269E222DE02D00019F25 /* AppDelegate.swift in Sources */,
 			);
