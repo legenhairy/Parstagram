@@ -113,13 +113,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Harry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnD-ld-ZUX">
-                                                    <rect key="frame" x="8" y="380" width="43" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="380" width="47" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi there i like photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4r-Jx-WkQ">
-                                                    <rect key="frame" x="59" y="380" width="308" height="21"/>
+                                                    <rect key="frame" x="63" y="380" width="304" height="21"/>
                                                     <color key="backgroundColor" red="0.32468315958976746" green="0.75945323705673218" blue="0.94652563333511353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -142,6 +142,41 @@
                                             <outlet property="captionLabel" destination="Y4r-Jx-WkQ" id="Yl1-hK-Pu0"/>
                                             <outlet property="photoView" destination="qhj-Gj-qpn" id="CjQ-an-dpn"/>
                                             <outlet property="usernameLabel" destination="XnD-ld-ZUX" id="YDB-hv-1Kj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="Qma-Tz-8Uk" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="438" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qma-Tz-8Uk" id="2UH-je-ci1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4V-a5-5tH">
+                                                    <rect key="frame" x="71" y="8" width="139.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqY-nH-hFT">
+                                                    <rect key="frame" x="16" y="8" width="47" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="T4V-a5-5tH" secondAttribute="bottom" constant="8" id="4Mo-qM-fjg"/>
+                                                <constraint firstItem="XqY-nH-hFT" firstAttribute="top" secondItem="2UH-je-ci1" secondAttribute="top" constant="8" id="S5d-8t-vZP"/>
+                                                <constraint firstItem="XqY-nH-hFT" firstAttribute="leading" secondItem="2UH-je-ci1" secondAttribute="leading" constant="16" id="gMq-zs-sKa"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T4V-a5-5tH" secondAttribute="trailing" constant="8" id="i70-Kd-FCA"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XqY-nH-hFT" secondAttribute="bottom" constant="8" id="kkU-VU-qsf"/>
+                                                <constraint firstItem="T4V-a5-5tH" firstAttribute="leading" secondItem="XqY-nH-hFT" secondAttribute="trailing" constant="8" id="nO3-JI-9Rg"/>
+                                                <constraint firstItem="T4V-a5-5tH" firstAttribute="top" secondItem="2UH-je-ci1" secondAttribute="top" constant="8" id="skN-e7-oAG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="T4V-a5-5tH" id="pZ9-9Z-F0D"/>
+                                            <outlet property="nameLabel" destination="XqY-nH-hFT" id="0fV-Hg-qGP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
